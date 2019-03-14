@@ -42,7 +42,12 @@ export class CustomerComponent implements OnInit {
   card3Expanded: boolean;
   card4Expanded: boolean;
   card5Expanded: boolean;
-
+  phase1: boolean;
+  phase2: boolean
+  phase3: boolean;
+  phase4: boolean;
+  phase5: boolean;
+  total: number =0;
   private validationMessages = {
     required: 'Please enter your email address.',
     email: 'Please enter a valid email address.'
@@ -75,18 +80,36 @@ export class CustomerComponent implements OnInit {
       p1_addon_1: false,
       p1_addon_2: false,
       p1_addon_3: false,
+      p1_addon_4: false,
+      p1_addon_5: false,
       p2_addon_1: false,
       p2_addon_2: false,
       p2_addon_3: false,
+      p2_addon_4: false,
+      p2_addon_5: false,
+      p2_addon_6: false,
+      p2_addon_7: false,
       p3_addon_1: false,
       p3_addon_2: false,
       p3_addon_3: false,
       p4_addon_1: false,
       p4_addon_2: false,
       p4_addon_3: false,
+      p4_addon_4: false,
+      p4_addon_5: false,
       p5_addon_1: false,
       p5_addon_2: false,
       p5_addon_3: false,
+      p5_addon_4: false,
+      p5_addon_5: false,
+      p5_addon_6: false,
+      p5_addon_7: false,
+      p5_addon_8: false,
+      p5_addon_9: false,
+      p5_addon_10: false,
+      p5_addon_11: false,
+      p5_addon_12: false,
+      p5_addon_13: false,
       card1Expanded: false,
       card2Expanded: false,
       card3Expanded: false,
@@ -141,7 +164,23 @@ export class CustomerComponent implements OnInit {
 
   save() {
     console.log(this.customerForm);
+    if (this.customerForm.get('phase1')){
+      this.total = this.total + 46048;
+    }
+    if (this.customerForm.get('phase2')){
+      this.total = this.total + 46048;
+    }
+    if (this.customerForm.get('phase3')){
+      this.total = this.total + 46048;
+    }
+    if (this.customerForm.get('phase4')){
+      this.total = this.total + 76582;
+    }
+    if (this.customerForm.get('phase5')){
+      this.total = this.total + 204699;
+    }
     console.log('Saved: ' + JSON.stringify(this.customerForm.value));
+    console.log('Total: ', this.total);
   }
 
   setMessage(c: AbstractControl): void {

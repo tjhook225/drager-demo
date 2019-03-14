@@ -219,8 +219,15 @@
           <div class="card-body" *ngIf="card1Expanded">
             <div class="card-deck">
       <div class="card border-primary mb-3" style="max-width: 100rem;">
-          <div class="card-header">Phase 1 Description</div>
-          <div class="card-body">Description Text</div>
+          <div class="card-header">Phase 1 Features</div>
+          <div class="card-body">
+            <li>20-foot long observation chamber</li>
+            <li>10-foot long burn chamber</li>
+            <li>2-day training course for up to 10 instructors</li>
+            <li>Instructor manuals and standard operating procedures (SOPs)</li>
+            <li>Instructors receive Certification to Instruct the Drager Curriculum upon completion</li>
+
+          </div>
         </div>
         <div class="card border-primary mb-3" style="max-width: 100rem;">
             <div class="card-header">Phase 1 Add Ons</div>
@@ -230,7 +237,7 @@
                       <input class="form-check-input"
                              id="sendp1_addon_1Id"
                              type="checkbox"
-                             formControlName="p1_addon_1">Phase 1 Add On
+                             formControlName="p1_addon_1">Mobile structure 
                     </label>
                   </div>
                   <div class="form-check">
@@ -238,7 +245,7 @@
                         <input class="form-check-input"
                                id="sendp1_addon_2Id"
                                type="checkbox"
-                               formControlName="p1_addon_2">Phase 1 Add On
+                               formControlName="p1_addon_2">Custom paint colors and logos
                       </label>
                     </div>
                     <div class="form-check">
@@ -246,9 +253,25 @@
                           <input class="form-check-input"
                                  id="sendp1_addon_3Id"
                                  type="checkbox"
-                                 formControlName="p1_addon_3">Phase 1 Add On
+                                 formControlName="p1_addon_3">Emergency vent hatch in burn chamber
                         </label>
                       </div>
+                      <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input"
+                                   id="sendp1_addon_4Id"
+                                   type="checkbox"
+                                   formControlName="p1_addon_4">Replacement burn chamber 
+                          </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                              <input class="form-check-input"
+                                     id="sendp1_addon_5Id"
+                                     type="checkbox"
+                                     formControlName="p1_addon_5">Temperature monitoring
+                            </label>
+                          </div>
             </div>
           </div>
           </div>
@@ -276,8 +299,27 @@
                     <div class="card-body" *ngIf="card2Expanded">
                       <div class="card-deck">
                 <div class="card border-primary mb-3" style="max-width: 100rem;">
-                    <div class="card-header">Phase 2 Description</div>
-                    <div class="card-body">Description Text</div>
+                    <div class="card-header">Phase 2 Features</div>
+                    <div class="card-body">
+                      <li>Grade A 40-foot (12 meter) container</li>
+                      <li>High performance insulation</li>
+                      <li>6-gauge steel exterior</li>
+                      <li>1-gauge sheet metal covering insulation</li>
+                      <li>10-gauge steel flooring in burn chamber</li>
+                      <li>5/16” (8 mm) chain on walls, ceiling, and doors of burn areas to hold Class A materials</li>
+                      <li>Partition with entry door</li>
+                      <li>Controllable ventilation system</li>
+                      <li>Concrete paving to line entire burn chamber floor</li>
+                      <li>55-gallon crib fire drum</li>
+                      <li>Side entry doors (2) without locks</li>
+                      <li>Access for hose line</li>
+                      <li>Low flow water nozzle - 30/60/95/125 GPM (113/226/360/473 LPM)</li>
+                      <li>Paint - red oxide</li>
+                      <li>2-day train-the-trainer course with certified instructors</li>
+
+
+                      
+                    </div>
                   </div>
                   <div class="card border-primary mb-3" style="max-width: 100rem;">
                       <div class="card-header">Phase 2 Add Ons</div>
@@ -287,7 +329,7 @@
                                 <input class="form-check-input"
                                        id="sendp2_addon_1Id"
                                        type="checkbox"
-                                       formControlName="p2_addon_1">Phase 2 Add On
+                                       formControlName="p2_addon_1">Custom paint colors and logos
                               </label>
                             </div>
                             <div class="form-check">
@@ -295,7 +337,7 @@
                                   <input class="form-check-input"
                                          id="sendp2_addon_2Id"
                                          type="checkbox"
-                                         formControlName="p2_addon_2">Phase 2 Add On
+                                         formControlName="p2_addon_2">Mobile unit for transport
                                 </label>
                               </div>
                               <div class="form-check">
@@ -303,9 +345,41 @@
                                     <input class="form-check-input"
                                            id="sendp2_addon_3Id"
                                            type="checkbox"
-                                           formControlName="p2_addon_3">Phase 2 Add On
+                                           formControlName="p2_addon_3">Emergency vent hatch - burn chamber
                                   </label>
                                 </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input"
+                                             id="sendp2_addon_4Id"
+                                             type="checkbox"
+                                             formControlName="p2_addon_4">Additional 20’ (6 meter) container and burn chamber
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                      <label class="form-check-label">
+                                        <input class="form-check-input"
+                                               id="sendp2_addon_5Id"
+                                               type="checkbox"
+                                               formControlName="p2_addon_5">hermocouple temperature monitoring system
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input"
+                                                 id="sendp6_addon_3Id"
+                                                 type="checkbox"
+                                                 formControlName="p2_addon_6">Custom container configurations
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                          <label class="form-check-label">
+                                            <input class="form-check-input"
+                                                   id="sendp7_addon_3Id"
+                                                   type="checkbox"
+                                                   formControlName="p2_addon_7">Phase 2+ Mobile : Advanced Interior Attack 
+                                          </label>
+                                        </div>
                       </div>
                     </div>
                     </div>
@@ -329,8 +403,26 @@
             <div class="card-body" *ngIf="card3Expanded">
             <div class="card-deck">
                 <div class="card border-primary mb-3" style="max-width: 100rem;">
-                    <div class="card-header">Phase 3 Description</div>
-                    <div class="card-body">Description Text</div>
+                    <div class="card-header">Phase 3 Features</div>
+                    <div class="card-body">
+                      <li>One trip 20-foot container</li>
+                      <li>High performance insulation</li>
+                      <li>16 gauge steel exterior</li>
+                      <li>11 gauge sheet metal covering insulation</li>
+                      <li>11 gauge steel flooring</li>
+                      <li>5/16" chain on walls, ceiling, and doors of burn area to hold Class A materials</li>
+                      <li>Ventilation-limited compartment</li>
+                      <li>Partition with barn-style entry door</li>
+                      <li>Interior heat protectors</li>
+                      <li>Concrete pavers lining entire floor</li>
+                      <li>Controllable ventilation system</li>
+                      <li>Compartment door to produce backdraft condition when opened</li>
+                      <li>55-gallon crib fire drum</li>
+                      <li>Paint - red oxide</li>
+                      <li>Low flow nozzle 30/60/95/125 GPM</li>
+                      <li>2-day train-the-trainer course with certified instructors</li>
+                      
+                    </div>
                   </div>
                   <div class="card border-primary mb-3" style="max-width: 100rem;">
                       <div class="card-header">Phase 3 Add Ons</div>
@@ -340,7 +432,7 @@
                                 <input class="form-check-input"
                                        id="sendp3_addon_1Id"
                                        type="checkbox"
-                                       formControlName="p3_addon_1">Phase 3 Add On
+                                       formControlName="p3_addon_1">Custom paint colors and logos
                               </label>
                             </div>
                             <div class="form-check">
@@ -348,7 +440,7 @@
                                   <input class="form-check-input"
                                          id="sendp3_addon_2Id"
                                          type="checkbox"
-                                         formControlName="p3_addon_2">Phase 3 Add On
+                                         formControlName="p3_addon_2">Emergency vent hatch-burn chamber
                                 </label>
                               </div>
                               <div class="form-check">
@@ -356,7 +448,7 @@
                                     <input class="form-check-input"
                                            id="sendp3_addon_3Id"
                                            type="checkbox"
-                                           formControlName="p3_addon_3">Phase 3 Add On
+                                           formControlName="p3_addon_3">Thermocouple temperature monitoring system
                                   </label>
                                 </div>
                       </div>
@@ -382,8 +474,28 @@
             <div class="card-body" *ngIf="card4Expanded">
             <div class="card-deck">
                 <div class="card border-primary mb-3" style="max-width: 100rem;">
-                    <div class="card-header">Phase 4 Description</div>
-                    <div class="card-body">Description Text</div>
+                    <div class="card-header">Phase 4 Features</div>
+                    <div class="card-body">
+                      <li>Two (2) 40 ft. (12.19 m) containers and one (1) 20 ft (6.09 m) container</li>
+                      <li>High performance insulation</li>
+                      <li>16 gauge steel exterior</li>
+                      <li>11 gauge sheet metal covering insulation in burn chamber</li>
+                      <li>11 gauge steel flooring in burn chamber and adjacent area</li>
+                      <li>5/16" chain on walls, ceiling, and doors of burn areas to hold Class A materials</li>
+                      <li>Entry room leading to garage structure</li>
+                      <li>Partition from entry room to main garage area with entry door</li>
+                      <li>Double wide burn chamber in garage structure</li>
+                      <li>Controllable ventilation system</li>
+                      <li>Concrete paving to line burn area floor</li>
+                      <li>55-gallon crib fire drum (x2)</li>
+                      <li>2 side entry doors without locks in garage</li>
+                      <li>2 side entry doors without locks in entry room</li>
+                      <li>Access for hose lines</li>
+                      <li>Paint red oxide</li>
+                      <li>A/B/C/D Signage</li>
+                      <li>Low flow nozzle – 30/60/95/125 GPM</li>
+                      <li>2-day train-the-trainer course with certified instructors</li>
+                    </div>
                   </div>
                   <div class="card border-primary mb-3" style="max-width: 100rem;">
                       <div class="card-header">Phase 4 Add Ons</div>
@@ -393,7 +505,7 @@
                                 <input class="form-check-input"
                                        id="sendp4_addon_1Id"
                                        type="checkbox"
-                                       formControlName="p4_addon_1">Phase 4 Add On
+                                       formControlName="p4_addon_1">Custom paint colors and logos
                               </label>
                             </div>
                             <div class="form-check">
@@ -401,7 +513,7 @@
                                   <input class="form-check-input"
                                          id="sendp4_addon_2Id"
                                          type="checkbox"
-                                         formControlName="p4_addon_2">Phase 4 Add On
+                                         formControlName="p4_addon_2">Car prop
                                 </label>
                               </div>
                               <div class="form-check">
@@ -409,9 +521,25 @@
                                     <input class="form-check-input"
                                            id="sendp4_addon_3Id"
                                            type="checkbox"
-                                           formControlName="p4_addon_3">Phase 4 Add On
+                                           formControlName="p4_addon_3">Emergency vent hatch-burn chamber
                                   </label>
                                 </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input"
+                                             id="sendp4_addon_4Id"
+                                             type="checkbox"
+                                             formControlName="p4_addon_4">Thermocouple temperature monitoring system
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                      <label class="form-check-label">
+                                        <input class="form-check-input"
+                                               id="sendp4_addon_5Id"
+                                               type="checkbox"
+                                               formControlName="p4_addon_5">Custom container configurations
+                                      </label>
+                                    </div>
                       </div>
                     </div>
                     </div>
@@ -445,7 +573,7 @@
                                 <input class="form-check-input"
                                        id="sendp5_addon_1Id"
                                        type="checkbox"
-                                       formControlName="p5_addon_1">Phase 5 Add On
+                                       formControlName="p5_addon_1">Forcible entry door
                               </label>
                             </div>
                             <div class="form-check">
@@ -453,7 +581,7 @@
                                   <input class="form-check-input"
                                          id="sendp5_addon_2Id"
                                          type="checkbox"
-                                         formControlName="p5_addon_2">Phase 5 Add On
+                                         formControlName="p5_addon_2">Denver Drill prop
                                 </label>
                               </div>
                               <div class="form-check">
@@ -461,9 +589,89 @@
                                     <input class="form-check-input"
                                            id="sendp5_addon_3Id"
                                            type="checkbox"
-                                           formControlName="p5_addon_3">Phase 5 Add On
+                                           formControlName="p5_addon_3">Breaching wall prop
                                   </label>
                                 </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input"
+                                             id="sendp5_addon_4Id"
+                                             type="checkbox"
+                                             formControlName="p5_addon_4">Pitched roof
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                      <label class="form-check-label">
+                                        <input class="form-check-input"
+                                               id="sendp5_addon_5Id"
+                                               type="checkbox"
+                                               formControlName="p5_addon_5">Flat roof
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input"
+                                                 id="sendp5_addon_6Id"
+                                                 type="checkbox"
+                                                 formControlName="p5_addon_6">Rappel bar
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                          <label class="form-check-label">
+                                            <input class="form-check-input"
+                                                   id="sendp5_addon_7Id"
+                                                   type="checkbox"
+                                                   formControlName="p5_addon_7">Bail out prop
+                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                              <input class="form-check-input"
+                                                     id="sendp5_addon_8Id"
+                                                     type="checkbox"
+                                                     formControlName="p5_addon_8">Moveable walls
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                              <label class="form-check-label">
+                                                <input class="form-check-input"
+                                                       id="sendp5_addon_9Id"
+                                                       type="checkbox"
+                                                       formControlName="p5_addon_9">Roof reinforcement package
+                                              </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                  <input class="form-check-input"
+                                                         id="sendp5_addon_10Id"
+                                                         type="checkbox"
+                                                         formControlName="p5_addon_10">Additional staircase
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <label class="form-check-label">
+                                                    <input class="form-check-input"
+                                                           id="sendp5_addon_11Id"
+                                                           type="checkbox"
+                                                           formControlName="p5_addon_11">Additional doors and windows
+                                                  </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                      <input class="form-check-input"
+                                                             id="sendp5_addon_12Id"
+                                                             type="checkbox"
+                                                             formControlName="p5_addon_12">Emergency ventilation
+                                                    </label>
+                                                  </div>
+                                                  <div class="form-check">
+                                                      <label class="form-check-label">
+                                                        <input class="form-check-input"
+                                                               id="sendp5_addon_13Id"
+                                                               type="checkbox"
+                                                               formControlName="p5_addon_13">Customized options to meet specific requirements
+                                                      </label>
+                                                    </div>
                       </div>
                     </div>
             </div>
