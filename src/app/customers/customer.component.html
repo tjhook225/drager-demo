@@ -229,7 +229,7 @@
 
           </div>
         </div>
-        <div class="card border-primary mb-3" style="max-width: 100rem;">
+        <div class="card border-primary mb-2" style="max-width: 100rem;">
             <div class="card-header">Phase 1 Add Ons</div>
             <div class="card-body">
                 <div class="form-check">
@@ -274,10 +274,18 @@
                           </div>
             </div>
           </div>
+          
           </div>
-          <div>
-            <img  src="assets/Pictures/ford_truck.jpg" alt="Picture of Ford" width="900" height="450">
-          </div>
+          <div class="card-deck">
+          <div class="card border-primary mb-2" style="max-width: 100rem;">
+              <img class="card-img-top" src="assets/Pictures/PhaseOne_picture.jpg" alt="Phase 1 Picture">
+              
+            </div>
+            <div class="card border-primary mb-2" style="max-width: 100rem;">
+                <img class="card-img-top" src="assets/Pictures/PhaseOne_blueprint.PNG" alt="Phase 1 Blueprint">
+                
+              </div>
+            </div>
           <div class="form-check">
               <label class="form-check-label">
                 <input class="form-check-input"
@@ -383,6 +391,14 @@
                       </div>
                     </div>
                     </div>
+                    <div class="card-deck">
+                        <div class="card border-primary mb-2" style="max-width: 100rem;">
+                            <img class="card-img-top" src="assets/Pictures/PhaseTwo_picture.jpg" alt="Phase 2 Picture">
+                          </div>
+                          <div class="card border-primary mb-2" style="max-width: 100rem;">
+                              <img class="card-img-top" src="assets/Pictures/PhaseTwo_blueprint.PNG" alt="Phase 2 Blueprint">
+                            </div>
+                          </div>
                     <div class="form-check">
                         <label class="form-check-label">
                           <input class="form-check-input"
@@ -455,6 +471,14 @@
                     </div>
 
                 </div>
+                <div class="card-deck">
+                    <div class="card border-primary mb-2" style="max-width: 100rem;">
+                        <img class="card-img-top" src="assets/Pictures/PhaseThree_picture.PNG" alt="Phase 3 Picture">
+                      </div>
+                      <div class="card border-primary mb-2" style="max-width: 100rem;">
+                          <img class="card-img-top" src="assets/Pictures/PhaseThree_blueprint.PNG" alt="Phase 3 Blueprint">
+                        </div>
+                      </div>
                 <div class="form-check">
                     <label class="form-check-label">
                       <input class="form-check-input"
@@ -543,6 +567,14 @@
                       </div>
                     </div>
                     </div>
+                    <div class="card-deck">
+                        <div class="card border-primary mb-2" style="max-width: 100rem;">
+                            <img class="card-img-top" src="assets/Pictures/PhaseFour_picture.PNG" alt="Phase 4 Picture">
+                          </div>
+                          <div class="card border-primary mb-2" style="max-width: 100rem;">
+                              <img class="card-img-top" src="assets/Pictures/PhaseFour_blueprint.PNG" alt="Phase 4 Blueprint">
+                            </div>
+                          </div>
                     <div class="form-check">
                         <label class="form-check-label">
                           <input class="form-check-input"
@@ -562,8 +594,13 @@
             <div class="card-body" *ngIf="card5Expanded">
             <div class="card-deck">
                 <div class="card border-primary mb-3" style="max-width: 100rem;">
-                    <div class="card-header">Phase 5 Description</div>
-                    <div class="card-body">Description Text</div>
+                    <div class="card-header">Phase 5 Features</div>
+                    <div class="card-body">
+                      <li>Complete Dräger Swede Survival Phase 5 System</li>
+                      <li>2-day training course for up to 10 instructors</li>
+                      <li>Instructor manuals and SOPs</li>
+                      <li>Instructors receive Certification to Instruct the Dräger Curriculum upon completion</li>
+                    </div>
                   </div>
                   <div class="card border-primary mb-3" style="max-width: 100rem;">
                       <div class="card-header">Phase 5 Add Ons</div>
@@ -675,6 +712,11 @@
                       </div>
                     </div>
             </div>
+            <div class="card-deck">
+                <div class="card border-primary mb-2" style="max-width: 100rem;">
+                    <img class="card-img-top" src="assets/Pictures/PhaseFive_picture.jpg" alt="Phase 5 Picture">
+                  </div>
+                  </div>
             <div class="form-check">
                 <label class="form-check-label">
                   <input class="form-check-input"
@@ -685,6 +727,102 @@
               </div>
             </div>
             
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header" (click)="card6Expanded=!card6Expanded">Phase 6</div>
+                <div class="card-body" *ngIf="card6Expanded">
+                <div class="card-deck">
+                    <div class="card border-primary mb-3" style="max-width: 100rem;">
+                        <div class="card-header">Phase 6 Features</div>
+                        <div class="card-body">
+                          <li>High performance insulation in burn chamber</li>
+                          <li>16-gauge steel exterior</li>
+                          <li>11-gauge sheet metal covering insulation</li>
+                          <li>5/16" chain on walls, ceiling, and doors of burn chamber</li>
+                          <li>Two burn chambers―one in each of the 20-ft. containers</li>
+                          <li>Ventilation system</li>
+                          <li>Concrete paving stones lining burn chamber floor</li>
+                          <li>Side entry doors without locks</li>
+                          <li>Access for hose line</li>
+                        </div>
+                      </div>
+                      <div class="card border-primary mb-3" style="max-width: 100rem;">
+                          <div class="card-header">Phase 6 Add Ons</div>
+                          <div class="card-body">
+                              <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input class="form-check-input"
+                                           id="sendp6_addon_1Id"
+                                           type="checkbox"
+                                           formControlName="p6_addon_1">Custom paint colors and logos
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input"
+                                             id="sendp6_addon_2Id"
+                                             type="checkbox"
+                                             formControlName="p6_addon_2">Walkable roof platform―22' long x 8' wide
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                      <label class="form-check-label">
+                                        <input class="form-check-input"
+                                               id="sendp6_addon_3Id"
+                                               type="checkbox"
+                                               formControlName="p6_addon_3">Rooftop railings
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input"
+                                                 id="sendp6_addon_4Id"
+                                                 type="checkbox"
+                                                 formControlName="p6_addon_4">Exterior stairs (with the roof platform)
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                          <label class="form-check-label">
+                                            <input class="form-check-input"
+                                                   id="sendp6_addon_5Id"
+                                                   type="checkbox"
+                                                   formControlName="p6_addon_5">Pitched roof
+                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                              <input class="form-check-input"
+                                                     id="sendp6_addon_6Id"
+                                                     type="checkbox"
+                                                     formControlName="p6_addon_6">Thermocouple temperature monitoring system
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                              <label class="form-check-label">
+                                                <input class="form-check-input"
+                                                       id="sendp6_addon_7Id"
+                                                       type="checkbox"
+                                                       formControlName="p6_addon_7">Custom container configurations
+                                              </label>
+                                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        
+                        <div class="card-deck">
+                            <div class="card border-primary mb-2" style="max-width: 100rem;">
+                                <img class="card-img-top" src="assets/Pictures/PhaseSix_picture.jpg" alt="Phase 6 Picture">
+                              </div>
+                              </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                              <input class="form-check-input"
+                                     id="sendphase6Id"
+                                     type="checkbox"
+                                     formControlName="phase6">Select
+                            </label>
+                          </div>
+                        </div>
               </div>
           
 
@@ -701,19 +839,8 @@
                   [disabled]="!customerForm.valid">
             Save
           </button>
-          <button class="btn btn-outline-secondary"
-                  type="button"
-                  (click)="populateTestData()">
-            Test Data
-          </button>
         </div>
       </div>
     </form>
   </div>
 </div>
-<br>Dirty: {{ customerForm.dirty }}
-<br>Touched: {{ customerForm.touched }}
-<br>Valid: {{ customerForm.valid }}
-<br>Value: {{ customerForm.value | json }}
-<br>Street: {{ addresses.get('0.street1')?.value }}
-<br>&nbsp;

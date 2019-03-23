@@ -42,11 +42,13 @@ export class CustomerComponent implements OnInit {
   card3Expanded: boolean;
   card4Expanded: boolean;
   card5Expanded: boolean;
+  card6Expanded: boolean;
   phase1: boolean;
   phase2: boolean
   phase3: boolean;
   phase4: boolean;
   phase5: boolean;
+  phase6: boolean;
   total: number =0;
   private validationMessages = {
     required: 'Please enter your email address.',
@@ -115,6 +117,14 @@ export class CustomerComponent implements OnInit {
       card3Expanded: false,
       card4Expanded: false,
       card5Expanded: false,
+      card6Expanded: false,
+      p6_addon_1: false,
+      p6_addon_2: false,
+      p6_addon_3: false,
+      p6_addon_4: false,
+      p6_addon_5: false,
+      p6_addon_6: false,
+      p6_addon_7: false,
       addresses: this.fb.array([this.buildAddress()])
     });
 
@@ -178,6 +188,9 @@ export class CustomerComponent implements OnInit {
     }
     if (this.customerForm.get('phase5')){
       this.total = this.total + 204699;
+    }
+    if (this.customerForm.get('phase6')){
+      this.total = this.total + 128499;
     }
     console.log('Saved: ' + JSON.stringify(this.customerForm.value));
     console.log('Total: ', this.total);
